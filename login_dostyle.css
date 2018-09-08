@@ -1,0 +1,68 @@
+body{
+	background-image:url("http://getwallpapers.com/wallpaper/full/9/d/0/781641-free-bing-images-desktop-wallpaper-1920x1200-for-tablet.jpg") ;
+	background-repeat:no repeat;
+}
+
+.website_name{
+	font-size:6em;
+		margin:0px 0px 0px 50px;
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		position: fixed;
+}
+header{	
+	margin-left:0px;
+		margin-right:0px;
+		margin-bottom:0px;
+		padding:1px;
+		
+		position: sticky;
+		
+		top:0px;
+		
+		
+		
+}
+.sub{
+	position:absolute;
+	left:25%;
+	top:80%;
+	font-family:Montserrat,sans-serif;
+	color:black;
+	width:50%;
+	height:15%;
+	border:0px;
+	
+	
+}
+
+
+.formplace{
+	font-family:Montserrat,sans-serif;
+		background-color:black;
+		opacity:0.5;	
+	width:30%;
+		border-radius:5%;
+		position: absolute;
+		top:25%;
+		right:35%;
+		padding:10px;
+		height:40%;
+		transition: opacity 2s;
+	
+}
+
+
+.formplace:hover{
+	opacity:0.8;
+}
+
+.ip{
+	
+		width:100%;
+}
+
+h2{
+	color:white;
+	width:70%
+}

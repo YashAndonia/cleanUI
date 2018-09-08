@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+
+<head>
+
+<meta charset="utf-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC76_gTd5IAPTxnHIftebbMN3JBbYO0JyA&callback=initMap">
+    </script>
+<script>
+$(document).ready(function(){
+
+
+$("td").click(function(){
+location.replace("Wilkommen.html");
+});
+
+$("#dp").click(function(){
+
+$("#panel").slideToggle("slow");
+
+});
+
+
+$(".xxx").click(function(){
+
+$(this).parent().slideUp("slow");
+
+
+
+});
+
+
+$("#load").click(function(){
+$(".xxx").parent().slideDown("fast");
+});
+
+
+$("#sports").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ $("#fir").slideDown("fast");
+});
+
+
+$("#food").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ $("#third").slideDown("fast");
+});
+
+
+
+$("#culture").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ 
+ $("#sec").slideDown("fast");
+
+ $("#fourth").slideDown("fast");
+});
+
+
+$("#festivals").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ $(".xxx").parent().slideDown("fast");
+ $("#fir").slideUp("fast");
+});
+
+$("#arts").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ 
+ $("#sixth").slideDown("fast");
+});
+
+$("#lit").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ 
+ $("#fifth").slideDown("fast");
+});
+
+
+});
+</script>
+	<title>Let's Do</title>
+	<link href="dostyle_mainpg.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style>
+
+h2{
+
+width:100%;}
+
+#plus{
+
+}
+   
+	.sub{
+	width:100px;
+	height:50px;
+	background:black;
+	color:white;
+	transition:color:2s;
+	transition:background 2s;
+	font-family:'Montserrat';
+	border:none;
+	}
+	
+	.sub:hover{
+	background:white;
+	color:black;
+	cursor:pointer;}
+
+	   #map{
+	   top:40%;
+	   width:30%;
+	   height:45%;
+	   }
+	   
+.xxx{
+position:absolute;
+top:0px;
+right:10px;
+background:inherit;
+}
+
+</style>
+
+</head> 
+
+<body >
+
+	<header>
+		<h1 style="width=100px;"><a href="Wilkommen.html">:Do.</a></h1>
+		
+		<input name="search" type="text" class="searchbar" placeholder="Search.">
+		</input>
+		 <div id="plus" style=" position:absolute; top:7%;right:10%;">
+			<a href="Do_Event.html"><img src="https://image.flaticon.com/icons/svg/32/32339.svg" width=40px height=40px>
+			</div></a>
+		<div id="UserInfo">
+			
+			<div id="dp"><img class="avatar" src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/jojohnson2_0.jpg?itok=L6J5MbTL" height=75 width=auto/></div>
+			
+				<h2 >John Hammond.</h2>
+		
+		
+			<div id="panel">
+				<a href="1614093_Settings.html"><h2>|Settings</h2><a/>
+				<a href="Do_1614093.html"><h2>|Log Out</h2></a>
+				<a href="your_events_do.html"><h2>|Your Events</h2></a>
+				<a href="Info1_do.html"><h2>|About Us</h2></a>	
+			</div>
+		
+		</div>
+		
+	</header>
+<br>
+<br>
+
+
+	<div id="Categories" style="position:absolute; top:80%">
+		<br><br><h2>Categories.</h2>
+		<table>
+		
+			<tr>
+				<td id="sports">Sports</td>
+				
+			</tr>
+			<tr>
+				<td id="food">Food</td>
+				
+			</tr>
+			<tr>
+				<td id="culture">Cultutre</td>
+				
+			</tr>
+			
+			<tr>
+				<td id="arts">Arts</td>
+				
+			</tr>
+			
+			<tr>
+				<td id="lit">Literature</td>
+				
+			</tr>
+			<tr>
+				<td id="festivals">Festivals</td>
+				
+			</tr>
+			
+		</table>
+		
+	</div>
+	
+	<div id="map">
+	
+	</div>
+	
+	<div class="stream" id="fir" style="background-image:url('https://lvs.luxury/wp-content/uploads/2015/05/IMG_1266Porche-event.jpg'); margin:0px 0px 0px 0px; left:0px; width:65%;">
+
+	<h2 class="title "style="font-size:4em;"><a href="1614093_Event_do.html"style="text-decoration:none;color:white;">New Event</a></h2>
+	
+	
+	</div>
+	
+	
+	<div id="details_event" onsubmit="return check();">
+	<form name="details">
+	<br><br>
+	<h2 style="width:60%;">Title of your event?<br></h2><input type="text" name="tit" style="width:65%;height:140px;"><br><br> 	      	
+	<h2 style="width:60%;">Description Of your event?<br></h2><input type="text" name ="des" style="width:65%;height:140px;"><br>
+	
+	
+	<h2 style="width:60%;">Location Of your event?<br></h2><input type="text" name="loc" style="width:65%;height:140px;"><br>
+	
+	<h2>Category of your event?<br><br>	
+	<input type="radio">Sports<br>
+	
+	<input type="radio" value="f">Food<br>
+	<input type="radio" value="c">Culture<br>
+	<input type="radio" value="a">Arts<br>
+	<input type="radio" value="l">Literature<br>
+	<input type="radio" value="fe">Festivals<br><br><br>
+	
+	<h2>Main Feed Image<br>
+		<input type="file" id="files" name="file"  />
+		<output id="list"></output>
+	
+	<br><br><br>
+	
+	<h2>Images/Videos to be added in description?<br>
+		<input type="file" id="files" name="file"  />
+		<output id="list"></output>
+	
+	<br><br>
+	
+	<input type="submit" class="sub" value="Submit">
+	<br><br>
+	
+	</form>
+	</div>
+	
+	
+	
+</body>
+ <script>
+ 
+      function initMap() {
+        var pos = {lat: 19.072691, lng: 72.897865};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: pos
+        });
+        var marker = new google.maps.Marker({
+          position: pos,
+          map: map
+		  
+		  
+        });
+		
+	  
+	   // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+	infoWindow=new google.maps.InfoWindow;
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You are here!');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } 
+      }
+
+	  
+	  function check(){
+	  
+	  if(!/\w{5,20}/.test(document.forms['details']['tit'].value)){
+	  alert("Title of the event should be between 5 and 20 characters.");
+	  return false;}
+	  
+	  if(!/\w{20,150}/.test(document.forms['details']['des'].value)){
+	  alert("Please describe your event in at least 20 characters and at most 150!");
+	  return false;}
+	  
+	  if(document.forms['details']['loc'].value==""){
+	  alert("Please enter the location of your event");
+	  return false;}
+	  
+	  }
+
+	  
+	  
+    </script>
+   
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<head>
+	<link href="login_dostyle.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<header>
+		<h1 class="website_name">:Do.</h1>
+	</header>
+	
+		<form  action="Wilkommen.html" method="post" name="yes" class="formplace"onsubmit="return check();">
+			
+			<h2>User Name</h2>
+				<input type="text" name="uname" class="ip" placeholder="Enter a username here- no punctuation marks!">
+			<h2>Password</h2>
+				<input type="password" name="pwrd" class="ip" placeholder="Enter password here" required>
+			
+			
+			
+			<input type="submit" value="Submit" class="sub" style="position:relative;top:10%">
+		</form>
+
+</body>
+
+
+	
+<script>
+function check(){
+if(document.forms['yes']['uname'].value=="")
+{alert("Please enter the username!!");
+return false;}
+if(document.forms['yes']['pwrd'].value=="")
+{alert("Please enter the PASSWORD!!");
+return false;}
+if(!(/[a-z A-z]*\d[a-z A-z]*/.test(document.forms['yes']['pwrd'].value))|!/^.{4,15}$/.test(document.forms['yes']['pwrd'].value)){
+alert("Invalid Password.");
+return false;}
+}
+</script>
+
+</html>

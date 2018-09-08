@@ -1,0 +1,263 @@
+#load{
+	position:relative;
+	bottom:0px;
+	left:25%;
+	
+}
+
+#load:hover{
+	cursor:pointer;
+	
+}
+
+
+	header{
+		margin-left:0px;
+		margin-right:0px;
+		margin-bottom:0px;
+		padding:1px;
+		
+		position: ABSOULTE;
+		
+		top:0px;
+		
+		
+		background-color: #ffffff;
+		
+		
+		}
+		h1{
+		font-size:6em;
+		margin:0px 0px 0px 50px;
+		font-family: 'Montserrat', sans-serif;
+		background-color: #ffffff;
+		
+		
+	
+	
+	}
+	h2{
+		font-family:'Montserrat',sans-serif;
+	
+	}
+	
+	a:link,a:visited{
+		text-decoration:none;
+		color:black;
+		
+	}
+
+
+.stream{
+	width:60%;
+	height:300px;
+	
+	position:relative;
+	left:50px;
+	
+	
+margin: 20px 20px 20px 20px;
+text-shadow:1px 1px black;
+
+
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+
+.stream:hover,.stream:link,.stream:visited{
+	cursor:pointer;
+	
+	
+}
+
+.eventtext{
+	
+	
+	top:40%;
+}
+
+#fir{
+background-image:url("http://www.hdnicewallpapers.com/Walls/Big/Cricket/Virat_Kohli_Play_Best_Shot_in_Cricket_Match_Wallpapers.jpg")  ;
+
+color:white;
+
+
+}
+
+#sec{
+background-image:url("https://media.giphy.com/media/qJWGUw3kZOVna/giphy.gif")  ;
+color:white;
+	
+	
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+	}	#third{
+		background:url("https://eventsimg.blob.core.windows.net/banners/0951384cdb1dde6250b3ed4af7d0374b") ;
+		
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+	}
+	
+	#fifth{
+		
+		background:url("https://www.miamibookfair.com/wp-content/uploads/2017/03/degroot-bookshelf.jpg") ;
+		
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+	}
+	
+	#sixth{
+		
+		background:url("https://cbsla.files.wordpress.com/2014/05/005_sohohousescreening_sohohouse.jpg");
+	
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+}
+	
+	#fourth{
+		background:linear-gradient(to bottom right,violet,blue,cyan,green,orange,yellow);
+		
+background-attachment:fixed;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+	}
+
+
+
+	#info{
+		padding-left:20px;
+		position:fixed;
+		top:20%;
+		right:5%;
+		border: 1px solid black;
+		width:25%;
+		
+		background-color:white;
+	
+	}
+	.title{
+		
+	text-align:center; position:relative; top:40%;
+	color:white;
+	}
+	h2{
+		position:relative;
+		right:0px;
+		font-size:30px;
+		margin:0px 0px 0px 0px;
+		text-align:left;
+		
+	}
+	.searchbar{
+		position:absolute;
+		top:10%;
+		left:25%;
+		width:40%;
+height: 3%;
+		}	
+.name{
+	text-align:center;
+
+	}
+	#UserInfo{
+height:100px;
+		width:10% 	;
+		position:absolute;
+		top:30px;
+		right:15%;
+		margin: 0px 0px 0px 0px;
+		vertical-align:center;
+		font-family:Montserrat,sans-serif;	
+		transition:opacity 1s;
+		
+	}
+	.avatar{
+		border-radius:45%;
+	}
+	
+	#dp:hover{
+		cursor:pointer;
+	}
+	
+	#Categories{
+		display:inline;
+		position:absolute;
+		top:80%;
+		right:1%;
+		font-family: 'Montserrat', sans-serif;
+		
+	
+	}
+	
+	#map{
+		position:absolute;
+		top:45%;
+		right:1%;
+		
+	}
+	
+
+	table{
+		border:1px solid black;
+		padding:1px;
+		border-collapse:collapse;
+		text-align:center;
+		
+		
+	}
+	tr{
+		
+		
+	}
+	td{
+		padding:15px;
+		margin: 12px;
+		height:50px;
+		width:425px;
+		transition: background-color 1s;
+	}
+	
+	
+	#panel{
+		position:absolute;
+		top:120px;
+		width:300px;
+		background-color:white;
+		border:1px solid black;
+		display:none;
+		transition: background-color 1s;
+		
+		transition: color 1s;
+	}
+	
+	#panel h2:hover{
+		color:white;
+		background-color:black;
+		transition:background-color 1s;
+		transition: color 1s;
+		cursor:pointer;
+	}
+	
+	#UserInfo:hover #panel{
+		
+	}
+	
+	td:hover{
+			cursor:pointer;
+			background-color:grey;
+			color:black;
+			
+	}

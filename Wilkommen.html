@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+
+<head>
+
+<meta charset="utf-8">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC76_gTd5IAPTxnHIftebbMN3JBbYO0JyA&callback=initMap">
+    </script>
+<script>
+$(document).ready(function(){
+$("#dp").click(function(){
+
+$("#panel").slideToggle("slow");
+
+});
+
+
+$(".xxx").click(function(){
+$(this).parent().slideUp("slow");
+
+
+
+});
+
+
+$("#sports").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ $("#fir").slideDown("fast");
+});
+
+
+$("#food").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ $("#third").slideDown("fast");
+});
+
+
+
+$("#culture").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ 
+ $("#sec").slideDown("fast");
+
+ $("#fourth").slideDown("fast");
+});
+
+
+$("#festivals").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ $(".xxx").parent().slideDown("fast");
+ $("#fir").slideUp("fast");
+});
+
+$("#arts").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ 
+ $("#sixth").slideDown("fast");
+});
+
+$("#lit").click(function(){
+ $(".xxx").parent().slideUp("slow");
+ 
+ $("#fifth").slideDown("fast");
+});
+
+$("#load").click(function(){
+$(".xxx").parent().slideDown("fast");
+});
+
+
+});
+</script>
+	<title>Let's Do</title>
+	<link href="dostyle_mainpg.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style>
+
+
+#sixth{
+display:none;
+}
+	   #map{
+	   top:40%;
+	   width:30%;
+	   height:45%;
+	   }
+	   
+.xxx{
+position:absolute;
+top:0px;
+right:10px;
+background:inherit;
+z-index:3;
+}
+
+</style>
+
+</head> 
+
+<body >
+
+	<header>
+		<h1 style="width=100px;"><a href="Wilkommen.html">:Do.</a></h1>
+		
+		<input name="search" type="text" class="searchbar" placeholder="Search.">
+		</input>
+		 	 <div id="plus" style=" position:absolute; top:7%;right:10%;">
+			<a href="Do_Event.html"><img src="https://image.flaticon.com/icons/svg/32/32339.svg" width=40px height=40px>
+			</div></a>
+		<div id="UserInfo">
+			
+			<div id="dp"><img class="avatar" src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/jojohnson2_0.jpg?itok=L6J5MbTL" height=75 width=auto/></div>
+			
+				<h2 >John Hammond.</h2>
+		
+		
+			<div id="panel">
+				<a href="1614093_Settings.html"><h2>|Settings</h2><a/>
+				<a href="Do_1614093.html"><h2>|Log Out</h2></a>
+				<a href="your_events_do.html"><h2>|Your Events</h2></a>
+				<a href="Info1_do.html"><h2>|About Us</h2></a>
+			</div>
+		
+		</div>
+		
+	</header>
+<br>
+<br>
+
+
+	<div id="Categories" style="position:absolute; top:80%">
+		<br><br><h2>Categories.</h2>
+		<table>
+		
+			<tr>
+				<td id="sports">Sports</td>
+				
+			</tr>
+			<tr>
+				<td id="food">Food</td>
+				
+			</tr>
+			<tr>
+				<td id="culture">Cultutre</td>
+				
+			</tr>
+			
+			<tr>
+				<td id="arts">Arts</td>
+				
+			</tr>
+			
+			<tr>
+				<td id="lit">Literature</td>
+				
+			</tr>
+			<tr>
+				<td id="festivals">Festivals</td>
+				
+			</tr>
+			
+		</table>
+		
+	</div>
+	
+	<div id="map">
+	
+	</div>
+	
+	<div class="stream" id="fir">
+	<h2 class="xxx" 	>X</h2>
+	<a href="1614093_Event_do.html"style="text-decoration:none;color:white;"><h2 class="title ">College Cricket Tournament</h2></a>
+	
+	
+	</div>
+	
+	<div class="stream" id="sec">
+	
+	<h2 class="xxx">X</h1>
+	<h2 class="title">Silent DJ!</h2>
+	
+	
+	</div>
+	
+	<div class="stream" id="third">
+	
+	<h2 class="xxx">X</h1>
+	<h2 class="title">Food Truck Festival</h2>
+	
+	
+	</div>
+	
+	<div class="stream" id="fourth">
+	
+	<h2 class="xxx">X</h1>
+	<h2 class="title">Beach Party</h2>
+	
+	
+	</div>
+	
+	<div class="stream" id="fifth">
+	
+	<h2 class="xxx">X</h1>
+	<h2 class="title">Book fair</h2>
+	
+	
+	</div>
+	
+	<div class="stream" id="sixth">
+	
+	<h2 class="xxx">X</h1>
+	<h2 class="title">Vintage Film Screening</h2>
+	
+	
+	</div>
+	<h2 id="load">Load more? :Do.</h2>
+</body>
+ <script>
+ 
+      function initMap() {
+        var pos = {lat: 19.072691, lng: 72.897865};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: pos
+        });
+        var marker = new google.maps.Marker({
+          position: pos,
+          map: map
+        });
+      
+	  
+	   // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+	infoWindow=new google.maps.InfoWindow;
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('You are here!');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } 
+      }
+
+
+	  
+    </script>
+   
+
+</html>
