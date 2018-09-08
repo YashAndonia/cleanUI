@@ -11,3 +11,6 @@ To traverse the website, start off at Do_1614093.html. From there onwards, all e
 
 # Home Page And Navigation:
 ![Demo](https://user-images.githubusercontent.com/26602639/45255721-6c70a780-b3a8-11e8-825c-6c2576bea0e6.gif)
+
+# After Logging in/ Registration:
+![Demo](https://user-images.githubusercontent.com/26602639/45255789-db9acb80-b3a9-11e8-9902-aecc0d8ffa61.gif)
